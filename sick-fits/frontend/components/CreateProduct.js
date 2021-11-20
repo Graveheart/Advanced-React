@@ -45,8 +45,8 @@ export default function CreateProduct() {
         e.preventDefault();
         console.log(inputs);
         // SUBMIT the inputs to the BE
-        const res = await createProduct();
-        console.log(res);
+        await createProduct();
+        clearForm();
       }}
     >
       <DisplayError error={error} />
