@@ -37,7 +37,7 @@ const CREATE_ORDER_MUTATION = gql`
     }
   }
 `;
-
+console.log(process.env.NEXT_PUBLIC_STRIPE_KEY);
 const stripeLib = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY);
 
 function CheckoutForm() {
