@@ -23,7 +23,9 @@ function Product({ product }) {
             pathname: 'update',
             query: { id: product.id },
           }}
-        />
+        >
+          Edit
+        </Link>
       </div>
     </ItemStyles>
   );
